@@ -1,7 +1,7 @@
 import { checkArrays } from "./checkArrays";
 import { checkDictionaries } from "./checkDictionaries";
 
-export const checkObjects = (a: object | null, b: object | null) => {
+export const checkObjects = (a: object | null, b: object | null): boolean => {
   // Check if a,b are null
   if (a !== null && b !== null) {
     // Check constructor equality

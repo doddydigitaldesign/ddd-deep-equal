@@ -1,9 +1,9 @@
 import { deepEqual } from "../index";
 import { hasOwnProperty } from "./utils/hasOwnProperty";
 
-export const checkDictionaries = (a: object, b: object) => {
+export const checkDictionaries = (a: object, b: object): boolean => {
   if (a instanceof Object && b instanceof Object) {
-    if (a.isPrototypeOf(b) || b.isPrototypeOf(a)) {
+    if (Object.isPrototypeOf.call(a, b) || Object.isPrototypeOf.call(b, a)) {
       return false;
     }
 

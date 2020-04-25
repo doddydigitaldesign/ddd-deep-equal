@@ -5,16 +5,25 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run test && tsc",
+    "build:babel": "babel --out-file ./dist/index.js ./src/index.ts",
+    "build": "npm run lint && npm run test && npm run build:babel",
+    "lint": "eslint . --max-warnings 0 --ext .js,.jsx,.ts,.tsx",
     "test": "jest"
   },
   "author": "Daniel Sonne Lehnberg <doddy@doddy.se>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
     "jest": "^25.4.0",
+    "prettier": "^2.0.5",
     "typescript": "^3.8.3"
   },
   "postinstall": "npx tsc"

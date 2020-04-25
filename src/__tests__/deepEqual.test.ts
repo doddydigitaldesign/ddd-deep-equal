@@ -1,7 +1,7 @@
 import { deepEqual } from "../index";
 
 describe("deepEqual", () => {
-  const objA: { [key: string]: any } = {
+  const objA = {
     key1: "value1",
     key2: [null, 2, { key: null, key1: true }, undefined],
     key3: null,

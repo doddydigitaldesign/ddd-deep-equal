@@ -1,6 +1,6 @@
 import { checkObjects } from "./lib/checkObjects";
 
-export const deepEqual = (a: unknown, b: unknown) => {
+export const deepEqual = (a: unknown, b: unknown): boolean => {
   // Strict equality implies deep equality
   if (a !== b) {
     // Type equality is a neccessary condition for deep equality
