@@ -5,3 +5,5 @@ src
 .eslintrc.js
 .travis.yml
 .vscode
+.env*
+postbuild-test.js
