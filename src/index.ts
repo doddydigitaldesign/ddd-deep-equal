@@ -19,3 +19,4 @@ export const deepEqual = (a: unknown, b: unknown): boolean => {
   // return false by default
   return false;
 };
+export default deepEqual;

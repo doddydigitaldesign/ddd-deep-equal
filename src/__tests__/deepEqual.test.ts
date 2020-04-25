@@ -17,6 +17,7 @@ describe("deepEqual", () => {
     "8": "value8",
     9: "value9",
     "key/10": "value10",
+    "key/11": {},
   };
   it("handles strictly equal arguments", () => {
     expect(deepEqual(objA, objA)).toBe(true);

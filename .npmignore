@@ -1,2 +1,7 @@
 tsconfig.json
 src
+.babelrc
+.eslintignore
+.eslintrc.js
+.travis.yml
+.vscode
