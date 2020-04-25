@@ -1,4 +1,4 @@
-import { deepEqual } from "..";
+import { deepEqual } from "../index";
 
 export const checkArrays = (a: unknown[], b: unknown[]): boolean => {
   const lenA = a.length;

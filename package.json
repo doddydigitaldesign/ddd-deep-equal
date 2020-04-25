@@ -4,14 +4,17 @@
   "description": "A utility function for checking deep equality",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run test && tsc",
+    "test": "jest"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "@types/jest": "^25.2.1"
-  }
+  "dependencies": {}
 }
