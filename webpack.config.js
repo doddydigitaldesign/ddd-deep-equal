@@ -1,10 +1,12 @@
 var path = require("path");
 
 module.exports = {
+  target: "node",
   entry: path.resolve(__dirname, "src"),
-
   output: {
     filename: "index.js",
+    library: "deepEqual",
+    libraryTarget: "commonjs2",
     path: path.resolve(__dirname, "dist"),
   },
 

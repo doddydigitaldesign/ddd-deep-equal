@@ -11,12 +11,13 @@
     "declaration": true,
     "target": "ESNext",
     "module": "ES6",
-    "lib": ["ES6"],
+    "lib": ["ES6", "ESNext"],
     "strict": true,
     "rootDir": "src",
     "outDir": "dist",
     "moduleResolution": "node",
-    "removeComments": true
+    "removeComments": true,
+    "importHelpers": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**/*", "dist/**/*", "src/**/*.test.*"]
