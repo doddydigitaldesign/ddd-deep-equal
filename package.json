@@ -1,0 +1,17 @@
+{
+  "name": "ddd-deep-equal",
+  "version": "1.0.0",
+  "description": "A utility function for checking deep equality",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.1"
+  }
+}
