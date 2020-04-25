@@ -1,4 +1,6 @@
 # ddd-deep-equal
+[![Build Status](https://travis-ci.com/doddydigitaldesign/ddd-deep-equal.svg?branch=master)](https://travis-ci.com/doddydigitaldesign/ddd-deep-equal)
+---
 
 A deep equal implementation for some common JavaScript types.
 
